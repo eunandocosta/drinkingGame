@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(#c44100 -70%, #ff874c);
+    height: 100vh;
+}
+
+.gameArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Alkatra', cursive;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#4c5861 30%, #273036);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 35px;
+    overflow-wrap: break-word;
+    border-right: inset 4px #273036;
+    border-bottom: inset 4px #191f24;
+    filter:drop-shadow(rgba(0, 0, 0, 1) 0 0 15px);
+}
+
+.limit{
+    width: 90%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #ff874c;
+    border-radius: 5px;
+    background: linear-gradient(#ff874c 30%, #c44100);
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    color: white;
+    filter:drop-shadow(rgba(0, 0, 0, 1) 0 0 5px);
+    border-radius: 100%;
+    animation-name: rainbow1;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+
+@keyframes rainbow1 {
+    0%{background: #f4a261}
+    20%{background: #ff006e}
+    40%{background: #3a86ff}
+    60%{background: #8338ec}
+    80%{background: #ae2012}
+    100%{background: #f4a261}
+}
+
+
+#numero{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#desafio{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: medium;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.waves{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
